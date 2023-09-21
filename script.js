@@ -45,7 +45,7 @@ game();
 
 function game(){
     while(playerScore < 5 && computerScore < 5){
-        let playerChoice = prompt("What do you choose?").toLowerCase;
+        let playerChoice = prompt("What do you choose?");
         playRound(playerChoice, computerChoice);
     }
     if(playerScore == 5){
