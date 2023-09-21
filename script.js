@@ -15,26 +15,26 @@ function playRound(playerChoice, computerChoice){
     }else if(playerChoice == 'paper'){
         if(computerChoice == 'rock'){
             console.log('Player won, paper beats rock');
-            playerScore = playerScore + 1;
+            playerScore++;
         }else if(computerChoice == 'scissors'){
             console.log('Computer won, scissors beats paper');
-            computerScore = computerScore + 1;
+            computerScore++;
         }
     }else if(playerChoice == 'rock'){
         if(computerChoice == 'paper'){
             console.log('Computer won, paper beats rock');
-            computerScore = computerScore + 1;
+            computerScore++;
         }else if(computerChoice == 'scissors'){
             console.log('Player won, rock beats scissors');
-            playerScore = playerScore + 1;
+            playerScore++;
         }
     }else if(playerChoice == 'scissors'){
         if(computerChoice == 'rock'){
             console.log('Computer won, rock beats scissors');
-            computerScore = computerScore + 1;
+            computerScore++;
         }else if(computerChoice == 'paper'){
             console.log('Player won, scissors beats paper');
-            playerScore = playerScore + 1;
+            playerScore++;
         }
     }
 }
