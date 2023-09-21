@@ -40,12 +40,12 @@ function playRound(playerChoice, computerChoice){
 }
 let playerScore = 0;
 let computerScore = 0;
-const computerChoice = getComputerChoice();
 game();
 
 function game(){
     while(playerScore < 5 && computerScore < 5){
         let playerChoice = prompt("What do you choose?");
+        let computerChoice = getComputerChoice();
         playRound(playerChoice, computerChoice);
     }
     if(playerScore == 5){
