@@ -41,6 +41,7 @@ function playRound(playerChoice, computerChoice){
 let playerScore = 0;
 let computerScore = 0;
 const computerChoice = getComputerChoice();
+game();
 
 function game(){
     while(playerScore < 5 && computerScore < 5){
