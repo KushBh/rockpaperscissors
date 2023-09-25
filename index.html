@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <img src="rockpaperscissors/rock.jpg" id="rock">
-        <img src="rockpaperscissors/paper.jpg" id="paper">
-        <img src="rockpaperscissors/scissors.jpg" id="scissors">
+        <h3 id="score">0 - 0</h3>
+        <div onclick="getComputerChoice('rock')"><img src="rock.jpg" id="rock"></div>
+        <div onclick="getComputerChoice('paper')"><img src="paper.jpg" id="paper"></div>
+        <div onclick="getComputerChoice('scissors')"><img src="scissors.jpg" id="scissors"></div>
+        <p id="commentary">Choose your hand</p>
     </body>
 </html>
