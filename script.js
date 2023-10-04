@@ -71,15 +71,9 @@ function getComputerChoice() {
 function winCheck() {
     if (playerScore == 5) {
         commentary.textContent = "Player won the Game!";
-        disableClickListeners();
+        scoreDisplay.textContent = "0 - 0";
     } else if (computerScore == 5) {
         commentary.textContent = "Computer won the Game!";
-        disableClickListeners();
+        scoreDisplay.textContent = "0 - 0";
     }
-}
-
-function disableClickListeners() {
-    paper.removeEventListener('click', () => {});
-    rock.removeEventListener('click', () => {});
-    scissors.removeEventListener('click', () => {});
 }
